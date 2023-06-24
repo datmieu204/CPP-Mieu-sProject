@@ -1,0 +1,134 @@
+<!DOCTYPE html> <!-- Phần bắt buộc phần định nghĩa loại tài liệu-->
+
+<!--
+    1.h1-h6 (heading): Định nghĩa tiêu đề , tiêu đề 1 to nhất, càng về sau tiêu đề càng nhỏ 
+    2.p-paragraph: định nghĩa đoạn văn, viết phần chữ 
+    3.img: ảnh
+    4.a: dẫn tơi một siêu liên kết 
+    5.ul, li: unordered list, list item , hiện thị một dạng danh sách 
+    6.table: dạng bảng
+    7.input: 
+    8.button
+    9.div: tạo 1 khối bao quanh các vùng 
+    10.
+-->
+<html>
+    <!-- phần đầu gồm Tiêu đề trang web và ngôn ngữ Tiếng việt đc sử dụng  -->
+    <head>
+        <title>DAT - MIEU</title>  <!--Tiêu đề hiện trên phần trang web được hiện kết quả của gg -->
+
+        <meta charset="utf-8"> <!-- hỗ trợ hiển thị tiếng việt -->
+
+        <!--//CÁCH 1: INTERNAL 
+        <style>
+            h1 {
+                color: red;
+                font-size: 50px;
+            }
+        </style>  -->
+
+        
+
+
+    </head>
+
+    <!-- Phần thân -->
+    <body>
+        <div>
+            <h1> Phần mở đầu</h1>
+
+
+            
+            <h1 title="Đây là tiêu đề" >Phần Thân </h1> <!-- thuộc tính của thẻ html, 'title' là một phần trong attribute, còn rất nhiều thuộc tính khác -->
+
+            <input type="text"> <!--tạo 1 ô text để nhập chữ, dữ liệu-->
+
+            <input type="checkbox"> <!--tạo 1 ô để tích , hình vuông -->    
+            <input type="checkbox">
+            <input type="checkbox">
+
+            <input type="radio"> <!-- hình tròn, tạo ô tích -->
+            <input type="radio">
+
+            <input name="gender" type="radio"> <!--hình tròn chỉ được tích 1 lần do trùng name -->
+            <input name="gender" type="radio"> 
+            <input name="gender" type="radio"> 
+
+            <button>Đăng ký</button>  <!-- dạng nút bấm có chữ đc dùng cho đăng nhập hay đăng ký ,vv-->
+
+            <p> Đạt miêu có phải người đẹp trai nhất thế giới không, đây là câu hỏi rất khó trả lời</p>
+
+            <img src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/355347939_805654830932621_7950563020323029289_n.jpg?stp=dst-jpg_p843x403&_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=dj3Cm0T9ArYAX89G6KN&_nc_ht=scontent.fhan5-8.fna&oh=00_AfA7kC4gHEJgJwaAGLXkcbuVdmKW5RJZiMYlQeoychXpUw&oe=6499A3B3", alt="gundugan">
+            <!--với src là nguồn file ảnh, alt là tên của ảnh, không bắt buộc thẻ alt-->
+
+            <a href="https://www.facebook.com/profile.php?id=100024557927298"> thông tin anh Đạt đẹp trai cute </a>  <!-- liên kết với link -->
+
+            <ul>
+                <li>Buoc 1</li>
+                <li>Buoc 2</li>
+                <li>Buoc 3</li>
+                <li>Buoc 4</li>
+            </ul>
+
+            <ol> <!-- giống với 'ul' chỉ khác thay dấu chấm đen = số -->
+                <li>Buoc 1</li>
+                <li>Buoc 2</li>
+                <li>Buoc 33</li>
+            </ol>
+
+            <table>
+                <thead> <!--phần đầu của bảng -->
+                    <th> <!-- tiêu đề của bảng -->
+                        STT
+                    </th>
+                    <th>
+                        NAME    
+                    </th>
+                    <th>
+                        DIA CHI
+                    </th>
+                </thead>
+
+                <tbody> <!-- phần thân của bảng -->
+                    <tr> <!-- 1 dòng trong bảng -->
+                        <td>1</td>      <!-- thẻ td tương ứng với số thẻ th -->
+                        <td>DATMEO1</td>
+                        <td>HA DONG1</td>
+                    </tr>
+
+                    <tr> <!-- 1 dòng trong bảng -->
+                        <td>2</td>
+                        <td>DATMEO2</td>
+                        <td>HA DONG2</td>
+                    </tr>
+
+                    <tr> <!-- 1 dòng trong bảng -->
+                        <td>3</td>
+                        <td>DATMEO3</td>
+                        <td>HA DONG3</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+                <a href="https://www.youtube.com/watch?v=5Z-F3iIP66g"
+                target="_blank"
+                title="Nhac san 2023">
+                Click Me
+                </a>
+                <br>
+                <a href="mailto:datt2505myethuy5@gmail.com"> mail me</a>
+                <br>
+                <a href="lyrics.html"> My MUSIC</a>"
+
+        </div>
+    </body>
+</html>
+
+
+
+
+<!--Cách sử dụng CSS trong HTML, có 3 cách đó là:
+1.Interal: Sử dụng bên trong phần muốn CSS
+2.External: Sử dụng 1 file CSS riêng đc link với file HTML
+3.Inline: Sử dụng như 1 thuộc tính, Attribute -->
